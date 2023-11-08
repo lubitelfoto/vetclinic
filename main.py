@@ -104,5 +104,3 @@ def get_dog_by_pk(pk: int):
 def update_dog(pk: int, dog: Dog):
     updated_dog = update_dog_by_pk(pk, dog)
     return updated_dog
-
-uvicorn.run(app)
