@@ -1,4 +1,4 @@
-annotated-types==0.6.0
+annotated-types==0.5.0
 anyio==3.7.1
 click @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_f27dk3zwrb/croot/click_1698129816363/work
 exceptiongroup==1.1.3
