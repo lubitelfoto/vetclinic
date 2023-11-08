@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import Union
 from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError, HTTPException
 from pydantic import BaseModel
@@ -78,7 +79,7 @@ def get_post():
 
 
 @app.get('/dog', response_model=list, summary="Get dogs")
-def get_dogs(kind: str | None = None):
+def get_dogs(kind: Union[str, None] = None):
     if kind:
         if kind not in DogType.__members__:
             raise HTTPException(status_code=422, detail="Validation error")
